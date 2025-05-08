@@ -1,0 +1,91 @@
+:root{
+    /**COLORES*/
+
+    --Green: hsl(75, 94%, 57%);
+
+    /**Neutral*/
+
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+    /*- Weights: 400, 600, 700*/
+    --principal: "Inter", system-ui;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/**Sirve para que 1rem sea igual a 10px*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    background-color: var(--Off_Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    background-color: var(--Dark_Grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    /* padding: 1rem 2rem; */
+    width: 25%;
+    margin-top: 2rem;
+}
+img{
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    width: 30%;
+    margin-top: 1rem;
+}
+h1{
+    font-family: var(--principal);
+    font-weight: 700;
+    color: var(--White);
+}
+h3{
+    font-family:var(--principal);
+    font-weight: 600;
+    color: var(--Green);
+}
+p{
+    font-family: var(--principal);
+    font-weight: 400;
+    color: var(--White);
+    font-size: 1.4rem;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.opciones a{
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey);
+    width: 100%;
+    text-align: center;
+    border-radius: .8rem;
+    margin: .5rem;
+    padding: 1.5rem 0;
+    font-family: var(--principal);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.opciones a:hover{
+    background-color: var(--Green);
+    color: var(--Off_Black);
+}
+@media(max-width: 1300px) {
+ main{
+    width: 90%;
+ }
+}
